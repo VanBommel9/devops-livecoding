@@ -67,3 +67,8 @@
       name: docker
       state: started
     tags: docker
+  # my-project/ansible/playbook.yml
+  - hosts: all
+    become: true
+    roles:
+      - docker
