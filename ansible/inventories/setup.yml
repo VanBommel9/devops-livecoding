@@ -6,4 +6,4 @@ all:
   children:
     prod:
       hosts:
-        - hostname_or_IP
+       michelfranck.dibangoenga.takima.cloud: {}
