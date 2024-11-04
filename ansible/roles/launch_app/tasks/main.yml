@@ -1,2 +1,9 @@
 ---
 # tasks file for roles/launch_app
+- name: Launch application container
+  docker_container:
+    name: my-api
+    image: michelenga9/tp-devops-simple-api
+    networks:
+      - name: my-network
+    restart_policy: always

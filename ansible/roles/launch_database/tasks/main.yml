@@ -1,2 +1,15 @@
 ---
 # tasks file for roles/launch_database
+# roles/launch_database/tasks/main.yml
+
+- name: Launch database container
+  docker_container:
+    name: my-db
+    image: michelenga9/tp-devops-database
+    env:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pwd
+      POSTGRES_DB: db
+    networks:
+      - name: my-network
+    restart_policy: always
