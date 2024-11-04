@@ -68,8 +68,8 @@
       state: started
     tags: docker
   # my-project/ansible/playbook.yml
-  - hosts: all
-    become: true
+  #- hosts: all
+    #become: true
     roles:
       - docker
       - create_network
